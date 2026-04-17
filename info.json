@@ -1,7 +1,7 @@
 {
   "id": "plugin.com.pot-app.volcengine_official_tts",
   "plugin_type": "tts",
-  "icon": "volcengine.svg",
+  "icon": "lingva.svg",
   "display": "火山引擎 TTS",
   "homepage": "https://github.com/gsd-150/pot-app-tts-plugin-volcengine_official",
   "needs": [
