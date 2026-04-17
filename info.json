@@ -1,35 +1,73 @@
 {
-  "id": "plugin.com.pot-app.lingva_tts",
+  "id": "plugin.com.pot-app.volcengine_official_tts",
   "plugin_type": "tts",
-  "icon": "lingva.svg",
-  "display": "Lingva",
-  "homepage": "https://github.com/pot-app/pot-app-tts-plugin-template",
-  "needs": [{ "key": "requestPath", "display": "请求地址" }],
+  "icon": "volcengine.svg",
+  "display": "火山引擎 TTS",
+  "homepage": "https://github.com/gsd-150/pot-app-tts-plugin-volcengine_official",
+  "needs": [
+    {
+      "key": "appid",
+      "display": "App ID",
+      "type": "input"
+    },
+    {
+      "key": "accessToken",
+      "display": "Access Token",
+      "type": "input"
+    },
+    {
+      "key": "cluster",
+      "display": "Cluster ID",
+      "type": "input"
+    },
+    {
+      "key": "zh_cn-voiceType",
+      "display": "中文音色",
+      "type": "select",
+      "options": {
+        "zh_male_xiaoming": "影视解说",
+        "zh_female_qingxin": "清新女声",
+        "zh_male_zhubo": "男主播"
+      }
+    },
+    {
+      "key": "en-voiceType",
+      "display": "英文音色",
+      "type": "select",
+      "options": {
+        "en_male_adam": "美英男声",
+        "en_female_sarah": "澳英女声"
+      }
+    },
+    {
+      "key": "ja-voiceType",
+      "display": "日文音色",
+      "type": "select",
+      "options": {
+        "jp_male_satoshi": "日语男声",
+        "jp_female_hana": "日语女声"
+      }
+    },
+    {
+      "key": "speedRatio",
+      "display": "语速 (0.2-3)",
+      "type": "input"
+    },
+    {
+      "key": "volumeRatio",
+      "display": "音量 (0.1-3)",
+      "type": "input"
+    },
+    {
+      "key": "pitchRatio",
+      "display": "音高 (0.1-3)",
+      "type": "input"
+    }
+  ],
   "language": {
-    "zh_cn": "zh",
-    "zh_tw": "zh_HANT",
+    "zh_cn": "zh_cn",
+    "zh_tw": "zh_tw",
     "en": "en",
-    "ja": "ja",
-    "ko": "ko",
-    "fr": "fr",
-    "es": "es",
-    "ru": "ru",
-    "de": "de",
-    "it": "it",
-    "tr": "tr",
-    "pt_pt": "pt",
-    "pt_br": "pt",
-    "vi": "vi",
-    "id": "id",
-    "th": "th",
-    "ms": "ms",
-    "ar": "ar",
-    "hi": "hi",
-    "mn_cy": "mn",
-    "mn_mo": "mn",
-    "km": "km",
-    "nb_no": "no",
-    "nn_no": "no",
-    "fa": "fa"
+    "ja": "ja"
   }
 }
